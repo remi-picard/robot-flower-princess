@@ -57,6 +57,9 @@ uvicorn main:app --host 0.0.0.0 --port 8000 --reload
 
 # Méthode 3 : Mode développement
 uvicorn main:app --reload
+
+# Méthode 4 : Pull l'image Docker Hub
+docker run --rm -p 8000:8000 picardremi/robot-flower-princess:master
 ```
 
 L'API sera accessible sur : `http://localhost:8000`
